@@ -1,0 +1,18 @@
+# Local credentials, runtime state and agent output must stay private.
+.env
+.env.*
+!.env.example
+.local/
+.runtime/
+.private/
+.kimi/
+.zcode/
+.codex/
+node_modules/
+dist/
+coverage/
+*.log
+*.token
+*.pem
+*.key
+.DS_Store
