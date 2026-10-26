@@ -1,6 +1,6 @@
 # RFC 0001 — Connector contract
 
-Status: **proposed; awaiting architecture review**. Contract identifier: `anybot.connector/0.1-draft`. This identifier is an internal adapter contract, not a claim of a new industry wire protocol.
+Status: **alpha contract frozen after actual architecture consultation**. Contract identifier: `anybot.connector/0.1`. See [implementation API](0002-alpha-api.md) and [decisions](../docs/ARCHITECTURE-REVIEW.zh-CN.md). This identifier is an internal adapter contract, not a claim of a new industry wire protocol.
 
 The keywords MUST, SHOULD and MAY describe proposed requirements for this project. No implementation is certified by this document's publication.
 
@@ -39,7 +39,7 @@ Example only:
 
 ```json
 {
-  "contractVersion": "anybot.connector/0.1-draft",
+  "contractVersion": "anybot.connector/0.1",
   "provider": "reference",
   "publication": "support-demo",
   "operations": ["describe", "submit", "get", "cancel"],

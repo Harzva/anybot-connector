@@ -1,14 +1,14 @@
 # 实施拆分与协作任务书
 
-状态：任务包已准备，尚未派发或实施。所有权表中的目录是拟创建路径，不表示已有实现。
+状态：CXF 实际审阅已完成，公共 API 已冻结。原生 Kimi 已实际实施协议、渠道、示例与独立互操作测试。ZCode 原生 CLI 无法解析现有 Coding Plan 模型，未发生其实施调用；用户随后明确授权协调者接手 core/providers，现由协调者完成核心、提供方、CLI 和最终集成验收。详见 STATUS.md。
 
 ## 1. 执行顺序
 
 1. 协调者核对当前仓库、WIP、工具入口与文件归属，向 CXF 发起一轮有界架构审阅。
 2. 收到实际回复，记录采纳 / 校正 / 暂缓意见，冻结最小 contract。
 3. 协调者建立 package、lockfile、测试运行方式和公共类型边界。
-4. ZCode 实施核心与 provider；Kimi 先按已冻结 contract 独立编写黑盒用例和绑定文档，避免等待源码期间重复建设。
-5. ZCode 交付稳定接口后，Kimi 实施 HTTP/MCP 和首个渠道子集。
+4. ZCode 原生入口未能解析模型；用户授权协调者接手核心与 provider，Kimi 按已冻结 contract 独立编写黑盒用例。
+5. Kimi 实施 HTTP/MCP 和首个渠道子集，并用实际 TeamBot 后端辅助隔离验收。
 6. 协调者审查、合并、运行交叉测试与干净环境 quickstart，修复问题，再进入真实平台试点。
 
 本地已安装命令、账号缓存、dry-run 都不代表模型已经执行。账号或额度无法确认时，记录准确阻塞，不更换付费 API 或冒用另一模型名称。
@@ -38,7 +38,7 @@ docs/                     设计、使用与证据说明
 | 责任人 | 独占范围 | 允许只读的相邻内容 |
 | --- | --- | --- |
 | 协调者 | 根 package / lockfile / CI、`spec/`、公共文档、最终集成和发布 | 全仓库；私有产品仅按授权核对接口 |
-| ZCode | `src/core/`、`src/providers/`、`test/core/`、`test/providers/` | 已冻结 contract、共同 fixtures 的约定 |
+| 协调者（用户授权接手原 ZCode 工作包） | `src/core/`、`src/providers/`、`test/core/`、`test/providers/` | 已冻结 contract、共同 fixtures 的约定 |
 | Kimi | `src/transports/`、`src/channels/`、`test/transports/`、`test/interoperability/`、`examples/` | Core / provider 的公共接口 |
 | 协调者首轮负责 | `src/cli/`、`test/fixtures/` | 各模块的可用契约 |
 
@@ -59,7 +59,9 @@ docs/                     设计、使用与证据说明
 
 输出是建议，不能替代源码验证。协调者创建 review decision 文档，保留不同意见和未核实假设；原始会话与本机路径保留在仓库外。
 
-## 5. ZCode — 核心与提供方
+## 5. 原 ZCode 工作包 — 已授权协调者接手
+
+以下 Z1–Z3 保留原工作包编号，实际实现者是协调者，不能据编号归功于 ZCode。
 
 ### Z1：核心合同实现
 

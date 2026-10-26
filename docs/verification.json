@@ -1,0 +1,83 @@
+{
+  "schema": "anybot.verification/1",
+  "version": "0.1.0-alpha.1",
+  "recordedAt": "2026-10-26",
+  "sourceFilesSHA256": {
+    ".github/workflows/ci.yml": "352debcfd6ad0a0cbbc683ceb62bf5867b00d85d3f3a623b9e3d1f491bbb36e0",
+    "examples/cli-config.example.json": "fcefb9f5afde5f08cbc694885a033f6f8c5634a732d901a04ad3d182ab94c530",
+    "examples/http-server.mjs": "71d4e593cdc347aaf60b359f2bd2c75dafc21bf766124fd350d1fa3b92231b00",
+    "examples/knocket-channel.mjs": "2c0c3d4a607147395e9a31a4e57b57504b12596b3a48abfddb8167e13f491f9b",
+    "examples/lib/demo-connector.mjs": "4a60372d46eef2cc08cdad0334e008da0af2cf1fb5f7e572d4ed958a02992b7e",
+    "examples/mcp-server.mjs": "2653f39a875268d5fac3f717585266bc0ba9dc906c2307038f989da4eece3e09",
+    "package-lock.json": "072b5148145f1911fa4ff728c0f1773df13c7c0d49f42d40b08d84cccde79c26",
+    "package.json": "a9fe13cd21b137b6dd4a035a21d772ea7a2199415aaf3a49305beccc21bf1a59",
+    "spec/0001-connector-contract.md": "5678a12d67a442e79173b162d96c735a572afd8f60478809e8847b3d3edc6b87",
+    "spec/0002-alpha-api.md": "a749e886db641b216688e92236aa991812feb30fb44ece4eef32c4b2e19419e1",
+    "spec/0003-bindings.md": "1a57e5841debcde4fe083d33c5629b25f1f8c9b495ce042fbd12d7b98e48a09f",
+    "src/channels/knocket/index.mjs": "59f3924083626b3e040ba5b3dce5d0c390b32c5d14235048403df99e66a95e1b",
+    "src/cli/config.mjs": "45687711252557235813358edf429f150e89aa2299aed786c348a83e88dd07b5",
+    "src/cli/index.mjs": "65d5727a877b1bfcd696e96dc6d8104c12493b54b535b46beb3826dcb08c3423",
+    "src/contract.mjs": "bedd669c7806f88be543e12d3abb986eb07d1cb515d9bcc7c4606032dba383e9",
+    "src/core/index.mjs": "5bbd4c60a077411018967e98fbe76a1ca645a6b6d99db2696d754fa3d5878f5d",
+    "src/core/storage.mjs": "8039225469d74bbeb141a95204ba5bff6ec6e05876a1c353ea4193156bbea8e3",
+    "src/index.mjs": "bdb0030f0ea8f04587b15ddc4152cb0e67caa71b58f318e5595ce53713f36b47",
+    "src/providers/reference/index.mjs": "f64a8bda242ee63dffb8dc9ff63c13f9c8253d06742286cacc0353049996d59c",
+    "src/providers/teambot/index.mjs": "ce607c140bcfcdd4086ca1900f6bdc20ebffdff8b0a4b5ae02755ee9e3882bb2",
+    "src/transports/common/validate.mjs": "216f552700a39e7d19c58112eda59901df82d2a8eaf3e282101ee0b8e790d996",
+    "src/transports/http/body.mjs": "058d5528c4c40cd2c1955d73e768330e18f0b568f50cb75b5a50f85d8c7a32c5",
+    "src/transports/http/errors.mjs": "915b6071fdd68ea2e25d5c47d21ea67802ea31698d25cfa6a98caff0b07145ec",
+    "src/transports/http/index.mjs": "a8fcd5b5cc315a19ddead2ad52a0970ac0c9bc17a217cb0ab30240c2b9d447cd",
+    "src/transports/mcp/index.mjs": "664c78ce4eac1fc7c8e24b8b8abcd076d2ae49f4c813311320f7929e154613bb",
+    "test/cli/config.test.mjs": "f4535a9a22c4d604817cf11b9d968acd0f5da7ac6e5f6b96a1df01a91225d7d4",
+    "test/cli/runtime.test.mjs": "86b9d318ce75a66513ede416222424c0496488ce4888987b7ad4ddda17eba6ef",
+    "test/core/core.test.mjs": "b673b16656d90929ea7c0573c591235787dc03a1be0fe85c73e2e950ca24f048",
+    "test/fixtures/teambot-http.mjs": "a62522d90f7d9e2ba3b18e92c74208790c2f7e5c8bba3d3017f7226bcc77a59e",
+    "test/interoperability/cross-interface.test.mjs": "8c952cb4b126e0ce903403073dfdf82222a6a0790347b16b4a0b30a6cdd29a46",
+    "test/interoperability/fake-service.mjs": "1157c8e8ba6206d42ecbd683880ee4292934f8c80a13ae480c916623a46bc31c",
+    "test/interoperability/knocket.test.mjs": "0f6ed332b8d237ce19972f19e2d2e2154bab2fa57a19c28adde5148742723993",
+    "test/providers/teambot.test.mjs": "884370baf4c4a417787ca8579f19524cca3bffeb38d65e01273b7254ebf82c63",
+    "test/transports/http.test.mjs": "3a431c077e424b161cfbc40357a9e30351ac95374aa28822cacf026d55a9976d",
+    "test/transports/mcp.test.mjs": "5e13b0b0ee188642ae2dbbf37b790ee0e110c3d5f9a66bf30c620de7f64b71e7",
+    "test/transports/test-utils.mjs": "b331bc6afbebe91f418d149d3261cb82e4ab812e0cf996f4ad4b924c7aff37ff",
+    "tools/check-package.mjs": "a69ae07ef3c403406843bb3d6668c420bd9686ecb8f18401dec02b6dc6464504"
+  },
+  "publicSuite": [
+    {
+      "node": "22.22.3",
+      "passed": 64,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "node": "24.22.1",
+      "cleanInstall": true,
+      "passed": 64,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "isolatedBackend": {
+    "data": "synthetic enterprise identities and controlled localhost model responses",
+    "results": [
+      {
+        "log": "acceptance-2026-10-26T11-42-19-755Z.jsonl",
+        "assertions": 26,
+        "passed": 26,
+        "sha256": "4d7c65e06801c9799ea5e6022e869bad5fde0add8156908fa9a95f65407f2f1b"
+      },
+      {
+        "log": "channel-acceptance-2026-10-26T11-42-10-838Z.jsonl",
+        "assertions": 13,
+        "passed": 13,
+        "sha256": "a20e6511237d922b79072027b9f725d024ef70921ede634f08d7249cf1c4f0a3"
+      }
+    ],
+    "liveEnterprise": false,
+    "liveKnocket": false
+  },
+  "limits": [
+    "operator-asserted publication ownership",
+    "receipt loss before persistence may require operator reconciliation",
+    "real platform entry points deferred by user"
+  ]
+}

@@ -21,3 +21,7 @@ Before copying any existing code, record origin repository, exact revision, file
 ## Evidence
 
 An actual agent response is required before naming that agent as a reviewer or implementer. Public decision summaries may record reasoning and accepted findings; raw transcripts and local execution receipts remain outside this repository when they contain private context.
+
+## Implementation dependencies
+
+Exact dependency versions and licenses are recorded in [DEPENDENCIES.md](DEPENDENCIES.md) and package-lock.json. The SDK v2 stable line was checked against its official repository; Knocket documentation describes a custom Chat Completions endpoint but does not prove this strict subset will accept the platform's real default fields. Actual provider/channel verification remains separate.

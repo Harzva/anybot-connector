@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "stateDir": "./state",
+  "port": 8790,
+  "identities": [
+    {
+      "principal": "demo",
+      "tokenEnv": "ANYBOT_TOKEN",
+      "connections": ["demo"],
+      "operations": ["describe", "submit", "get", "cancel"]
+    }
+  ],
+  "connections": [
+    {
+      "id": "demo",
+      "revision": "1",
+      "publication": "demo",
+      "grantId": "local",
+      "provider": { "type": "reference", "delayMs": 20 }
+    }
+  ],
+  "knocket": {
+    "models": { "demo": "demo" }
+  }
+}

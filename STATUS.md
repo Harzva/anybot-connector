@@ -1,31 +1,32 @@
 # Status
 
-Updated: 2026-10-26.
+Updated: 2026-10-26. Version: `0.1.0-alpha.1`; contract: `anybot.connector/0.1`.
 
-## Current delivery
+The runnable reference alpha is implemented. Core, reference/TeamBot providers,
+HTTP, official MCP, the strict chat-completions channel and local CLI are present.
+The public suite passes **64/64, zero skips**. See [verification](docs/VERIFICATION.md)
+for exact evidence and remaining gates.
 
-- Original design documents, draft connector contract, implementation ownership and acceptance gates are prepared.
-- The independent [AnyBot-Connector repository](https://github.com/Harzva/anybot-connector) is public and MIT-licensed.
-- No private product code, credential, production record or private Git history is included in this initial document set.
-- Bootstrap checks passed for local document links, code-fence balance, whitespace and accidental local-path / credential-shaped content. These are documentation checks, not runtime or security conformance tests.
+| Item | State |
+| --- | --- |
+| CXF / CXQwen consultation | Actual native replies received; accepted and corrected advice recorded |
+| ZCode | Native model resolution failed before inference; no implementation attributed to it |
+| Core / providers / CLI | Coordinator implemented after explicit user takeover authorization |
+| HTTP / MCP / channel / independent interoperability tests | Native Kimi implementation, coordinator integration and corrections |
+| Reference runtime and crash recovery | Contract-tested with durable state and actual CLI child processes |
+| TeamBot adapter | 26 backend + 13 channel assertions passed against actual isolated services |
+| HTTP / MCP equivalence | Same core, caller, request and task; official client handshake and stdio tests |
+| Knocket text subset | Contract-tested; no real Knocket account acceptance |
+| Independent third-party provider | Not yet implemented or independently adopted |
+| npm publication / production deployment | Not performed; package remains private |
 
-## Pending work
+The user selected isolated backend acceptance for this milestone and will supply
+real platform entry points later. A test enterprise with synthetic identities and
+controlled model replies is separate from a real enterprise account or real Knocket
+visitor/handoff acceptance. Publication ownership remains operator-asserted.
 
-| Item | State | Evidence required to change state |
-| --- | --- | --- |
-| CXF architecture consultation | Pending; not invoked | Actual response and coordinator decision record |
-| ZCode core and provider implementation | Not started | Verified execution route, diff and passing assigned checks |
-| Kimi transport and interoperability implementation | Not started | Verified execution route, diff and passing assigned checks |
-| Runnable reference implementation | Not implemented | Clean-checkout quickstart and deterministic end-to-end tests |
-| TeamBot adapter | Planned | Adapter tests plus separately authorized enterprise integration evidence |
-| HTTP / MCP equivalence | Planned | Same caller, request and task facts across both interfaces |
-| Knocket | Planned | Contract tests and separate real-account interoperability evidence |
-| Independent provider portability | Planned | Implementation using the public contract without TeamBot internals |
-| npm package / release | Not published | License audit, package-content audit, clean install and release decision |
-| Production deployment | Not performed | Separate deployment scope and operational acceptance |
-
-Architecture review, implementation and acceptance are separate gates. Preparing prompts or checking an installed executable is not an actual agent run.
-
-## Evidence levels
-
-Use `planned`, `implemented`, `contract-tested`, `fixture-integrated`, `live-platform-verified`, and `production-accepted` precisely. A level applies to a named feature and tested version, not to every capability of a product.
+TeamBot returns an opaque receipt. A saved receipt survives connector restart;
+losing the response before its receipt is persisted can leave a task running that
+the connector cannot query or cancel. The connector reports outcome-unknown and
+never silently replays the POST. Do not interpret a recovery handle as guaranteed
+recovery. [Authority and recovery boundary](docs/HOST-INTEGRATION.md).

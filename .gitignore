@@ -16,3 +16,7 @@ coverage/
 *.pem
 *.key
 .DS_Store
+node_modules
+*.tgz
+*.local.json
+/state/
