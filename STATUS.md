@@ -5,8 +5,9 @@ Updated: 2026-10-26.
 ## Current delivery
 
 - Original design documents, draft connector contract, implementation ownership and acceptance gates are prepared.
-- The project is intended for publication as the independent MIT-licensed `AnyBot-Connector` repository.
+- The independent [AnyBot-Connector repository](https://github.com/Harzva/anybot-connector) is public and MIT-licensed.
 - No private product code, credential, production record or private Git history is included in this initial document set.
+- Bootstrap checks passed for local document links, code-fence balance, whitespace and accidental local-path / credential-shaped content. These are documentation checks, not runtime or security conformance tests.
 
 ## Pending work
 
